@@ -1,0 +1,146 @@
+{
+  "identity": {
+    "name": "E1 Beauty - Ethereal Minimalist",
+    "tone": "Elegant, Serene, Professional, Trustworthy",
+    "theme_preference": "light",
+    "core_philosophy": "Soft Luxury: Hard contrast typography on soft, breathable backgrounds. No clutter, just essence."
+  },
+  "typography": {
+    "font_family": {
+      "headings": "\"Playfair Display\", serif",
+      "body": "\"Manrope\", sans-serif",
+      "display": "\"Italiana\", serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-medium tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+      "caption": "text-sm tracking-widest uppercase font-medium text-muted-foreground"
+    },
+    "pairing_rules": "Use Playfair Display for all emotional headers. Use Manrope for all functional text, UI elements, and long-form content. Ensure high contrast (Deep Charcoal #1A1A1A) for readability."
+  },
+  "colors": {
+    "palette": {
+      "background": "#FDFCF8",
+      "foreground": "#1A1A1A",
+      "primary": "#D4AF37",
+      "secondary": "#F5E6E8",
+      "accent": "#E07A5F",
+      "muted": "#F3F4F6",
+      "border": "#E5E7EB",
+      "destructive": "#EF4444"
+    },
+    "usage": {
+      "background": "bg-[#FDFCF8] (Warm White) for main pages. bg-white for dashboard cards.",
+      "text": "text-[#1A1A1A] (Obsidian) for primary text. text-[#6B7280] (Gray-500) for secondary.",
+      "primary_action": "bg-[#1A1A1A] text-white hover:bg-[#333333] (High Contrast Button).",
+      "secondary_action": "bg-[#F5E6E8] text-[#1A1A1A] hover:bg-[#EBD5D8] (Soft Pink Button).",
+      "accent_highlight": "text-[#D4AF37] (Muted Gold) for small accents, icons, or thin lines.",
+      "dashboard_sidebar": "bg-[#FDFCF8] border-r border-[#E5E7EB]."
+    },
+    "tailwind_config_extension": {
+      "colors": {
+        "brand": {
+          "base": "#FDFCF8",
+          "dark": "#1A1A1A",
+          "gold": "#D4AF37",
+          "pink": "#F5E6E8",
+          "terra": "#E07A5F"
+        }
+      }
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "px-4 md:px-8 lg:px-16",
+      "section_gap": "gap-16 md:gap-24 lg:gap-32",
+      "element_gap": "gap-4 md:gap-6"
+    },
+    "grid_systems": {
+      "bento_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+      "gallery_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+      "dashboard_grid": "grid grid-cols-1 md:grid-cols-12 gap-6"
+    },
+    "structure_rules": [
+      "Mobile-First: Always start with grid-cols-1.",
+      "Asymmetry: Use col-span-2 or row-span-2 in bento grids to break monotony.",
+      "Breathing Room: Add py-20 or py-32 for section vertical padding.",
+      "Dashboard: Sidebar fixed left (w-64), content scrollable right."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-6 text-sm font-medium tracking-wide transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]",
+      "secondary": "rounded-full px-8 py-6 border border-[#E5E7EB] bg-transparent hover:bg-[#F3F4F6] transition-all",
+      "ghost": "text-[#1A1A1A] hover:text-[#D4AF37] underline-offset-4 hover:underline transition-colors"
+    },
+    "cards": {
+      "service_card": "group relative overflow-hidden rounded-2xl bg-white border border-[#E5E7EB] hover:shadow-lg transition-all duration-300",
+      "booking_card": "rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm",
+      "dashboard_stat": "rounded-xl border border-[#E5E7EB] bg-white p-6 flex flex-col gap-2"
+    },
+    "inputs": {
+      "default": "rounded-lg border-[#E5E7EB] bg-[#FDFCF8] px-4 py-3 focus:ring-1 focus:ring-[#1A1A1A] focus:border-[#1A1A1A] transition-all"
+    },
+    "navigation": {
+      "header": "fixed top-0 w-full z-50 bg-[#FDFCF8]/80 backdrop-blur-md border-b border-[#E5E7EB]/50",
+      "footer": "bg-[#1A1A1A] text-white py-20"
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Use a subtle grain overlay (opacity 0.03) on the main background to avoid digital flatness.",
+    "shadows": "shadow-[0_4px_20px_rgba(0,0,0,0.03)] for cards. shadow-[0_8px_30px_rgba(0,0,0,0.08)] for hovering.",
+    "border_radius": "rounded-2xl for large containers, rounded-lg for inputs/buttons.",
+    "micro_interactions": "Buttons slightly lift on hover. Images have a slow zoom scale-105 on hover."
+  },
+  "assets": {
+    "image_urls": {
+      "hero_bg": "https://images.unsplash.com/photo-1719760518176-e124a5bcd025",
+      "nail_service_1": "https://images.unsplash.com/photo-1772322586649-fc11154e76b9",
+      "nail_service_2": "https://images.unsplash.com/photo-1754799670312-8e7da8e40ad7",
+      "lash_service_1": "https://images.unsplash.com/photo-1645735123314-d11fcfdd0000",
+      "lash_service_2": "https://images.unsplash.com/photo-1747823490861-1fa6d0132fee",
+      "salon_interior": "https://images.unsplash.com/photo-1719760518176-e124a5bcd025",
+      "logo_placeholder": "https://via.placeholder.com/150x50?text=LUXE+BEAUTY"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["Sparkles", "Calendar", "Clock", "MapPin", "Instagram", "Mail", "Phone", "Scissors", "Star"]
+    }
+  },
+  "3d_libraries": {
+    "recommendation": "None needed for this minimalist aesthetic. Focus on high-quality 2D imagery and micro-interactions (Framer Motion).",
+    "optional": "React Spring Parallax for smooth scrolling effects on the landing page."
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Use 'Lenis' for smooth scrolling to give a premium feel.",
+      "Implement the 'Bento Grid' for the service gallery.",
+      "Ensure the Booking Wizard is step-by-step (Service -> Date/Time -> Info -> Confirm).",
+      "The Dashboard must be separate from the marketing site (different layout/sidebar).",
+      "Use 'Sonner' for all toast notifications (booking success, errors)."
+    ],
+    "frontend_tech": [
+      "Use Shadcn UI for interactive components (Calendars, Dialogs, Selects).",
+      "Customize Shadcn components to match the rounded-2xl and serif font styles.",
+      "Use Tailwind for all layout and spacing.",
+      "Do NOT use gradients for text headers. Keep them solid #1A1A1A."
+    ],
+    "accessibility": [
+      "Ensure all text meets APCA contrast guidelines (Deep Charcoal on Off-White is safe).",
+      "Add aria-labels to all icon-only buttons.",
+      "Support keyboard navigation for the booking calendar."
+    ]
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Don't make generic centered layouts. Use asymmetry.",
+    "Dark colors look good when used independently without gradients.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for sticky headers.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...}).",
+    "All interactive elements MUST include data-testid attribute."
+  ]
+}
